@@ -23,7 +23,7 @@ public class pemilihan {
             System.out.println("==============================");
             System.out.println("==============================");
         } else {
-        nilaiAkhir = (tugas*0.2 + kuis*0.2 + uts*0.3 + uas*0.4);
+        nilaiAkhir = (tugas*0.2 + kuis*0.2 + uts*0.3 + uas*0.3);
         if (nilaiAkhir > 80 && nilaiAkhir <= 100) {
             nilaiHuruf = "A";
         }

@@ -70,7 +70,7 @@ public class Tugas2 {
     }
     static int hitungKeliling(int sisi) {
         int x;
-        x = 4*sisi;
+        x = 12*sisi;
         return x;
     }
 }

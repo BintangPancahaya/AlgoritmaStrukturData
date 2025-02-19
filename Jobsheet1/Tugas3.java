@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
 public class Tugas3 {
+    static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
         
         int jumlahMK, menu;
         
@@ -57,7 +57,7 @@ public class Tugas3 {
         sc.close();
     }
     static void InputData(int jumlahMK, String namaMK[], String hari[], int sks[], int semester[]) {
-        Scanner sc = new Scanner(System.in);
+        sc.nextLine();
         
         for (int i = 0; i < jumlahMK; i++) {
             System.out.print("Masukkan Nama Matkul ke-"+(i+1)+": ");
@@ -67,8 +67,16 @@ public class Tugas3 {
             System.out.print("Masukkan Semester Matkul ke-"+(i+1)+": ");
             semester[i] = sc.nextInt();
             sc.nextLine();
+            for (int j = i; j < jumlahMK; j++) {
             System.out.print("Masukkan Hari Matkul ke-"+(i+1)+": ");
             hari[i] = sc.nextLine();
+            if (hari[i].equalsIgnoreCase("Sabtu") || hari[i].equalsIgnoreCase("Minggu")) {
+                System.out.println("\nHanya hari senin - jum'at saja!\n");
+                j--;
+                } else {
+                    break;
+                }
+            }
             if (i != (jumlahMK-1)) {
                 System.out.println("==================================");
             }
@@ -88,7 +96,7 @@ public class Tugas3 {
     }
     }
     static void TampilJadwalHari(int jumlahMK, String namaMK[], String hari[], int sks[], int semester[]) {
-        Scanner sc = new Scanner(System.in);
+        sc.nextLine();
         String key;
         boolean x = false;
         
@@ -106,7 +114,7 @@ public class Tugas3 {
         }
     }
     static void TampilJadwalSemester(int jumlahMK, String namaMK[], String hari[], int sks[], int semester[]) {
-        Scanner sc = new Scanner(System.in);
+        sc.nextLine();
         int key;
         boolean x = false;
         
@@ -124,7 +132,7 @@ public class Tugas3 {
         }
     }
     static void CariNamaMatkul(int jumlahMK, String namaMK[], String hari[], int sks[], int semester[]) {
-        Scanner sc = new Scanner(System.in);
+        sc.nextLine();
         String key;
         boolean x = false;
         
