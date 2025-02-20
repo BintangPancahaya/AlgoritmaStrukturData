@@ -70,8 +70,13 @@ public class fungsi {
         System.out.println("========================");
         System.out.println("Stok Bunga RoyalGarden 4");
         System.out.println("========================");
+        int stokPengurang[] = {0, 1 , 2, 3};
         for (int i = 0; i < 4; i++) {
-            System.out.println("Stok bunga "+namaBunga[i]+": " + stokBunga[3][i]);
+            int hasilKurang = stokBunga[3][i] - stokPengurang[i];
+            if (hasilKurang < 0) {
+                hasilKurang = 0;
+            }
+            System.out.println("Stok bunga "+namaBunga[i]+": " + hasilKurang);
         }
     }
 }

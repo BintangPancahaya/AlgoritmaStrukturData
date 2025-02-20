@@ -1,11 +1,11 @@
-|  | Algorithm and Data Structure |
+|  | Algoritma dan Struktur Data |
 |--|--|
 | NIM |  244107020115|
 | Nama |  Bintang Pancahaya Prasetyo |
 | Kelas | TI - 1H |
 | Repository | [link] (https://github.com/BintangPancahaya/AlgoritmaStrukturData/tree/main/Jobsheet1) |
 
-# KONSEP DASAR PEMROGRAMAN
+# JOBSHEET 1
 
 ## 2.2.1 Praktikum Pemilihan
 
@@ -60,14 +60,14 @@ Langkah-Langkah Kode Pemograman saya :
 
 Hasil Kode Program Pada Percobaan Fungsi
 
-![Fungsi1](img/Fungsi1.png)
-![Fungsi2](img/Fungsi2.png)
+![Fungsi1](img/NewFungsi1.png)
+![Fungsi2](img/NewFungsi2.png)
 
 Langkah-Langkah Kode Pemograman saya :
-1. Kode program PraktikumFungsi digunakan untuk menghitung pendapatan dari penjualan bunga di beberapa cabang toko serta menampilkan stok bunga di cabang Royal Garden 4 setelah dilakukan pengurangan.
-2. Program dimulai dengan mendeklarasikan array bunga yang berisi nama bunga, array harga yang menyimpan harga masing-masing bunga, array cabang yang menyimpan daftar cabang toko, serta array dua dimensi stok yang merepresentasikan jumlah stok setiap bunga di masing-masing cabang.
-3. Dalam metode main, program memanggil dua fungsi, yaitu tampilPendapatan dan tampilStokBunga. Fungsi tampilPendapatan menghitung total pendapatan setiap cabang dengan mengalikan stok bunga di cabang tersebut dengan harga masing-masing bunga, lalu menjumlahkan totalnya. Hasil pendapatan untuk setiap cabang kemudian ditampilkan di layar.
-4. Fungsi tampilStokBunga digunakan untuk menampilkan stok bunga di Royal Garden 4 setelah dikurangi dengan jumlah tertentu sesuai dengan array pengurang. Setelah pengurangan dilakukan, stok bunga yang tersisa ditampilkan ke layar.
+1. Kode program fungsi digunakan untuk menghitung pendapatan dari penjualan bunga di beberapa cabang toko serta menampilkan stok bunga di cabang Royal Garden 4 setelah dilakukan pengurangan.
+2. Program dimulai dengan mendeklarasikan array bunga yang berisi nama bunga, array harga yang menyimpan harga masing-masing bunga dari input user, serta array dua dimensi stok yang merepresentasikan jumlah stok setiap bunga di masing-masing cabang.
+3. Dalam metode main, ada program menu untuk memilih fungsi mana yang mau di panggil, dan terdapat dua fungsi di luar fungsi main, yaitu Pendapatan dan StockBungaCabang4. Fungsi Pendapatan menghitung total pendapatan setiap cabang dengan mengalikan stok bunga di cabang tersebut dengan harga masing-masing bunga, lalu menjumlahkan totalnya. Hasil pendapatan untuk setiap cabang kemudian ditampilkan di terminal.
+4. Fungsi StockBungaCabang4 digunakan untuk menampilkan stok bunga di Royal Garden 4 setelah dikurangi dengan jumlah tertentu sesuai dengan array pengurang, serta jika stok pada bunga itu kurang dari 0 maka program akan membuat stok bunga itu menjadi 0. Setelah pengurangan dilakukan, stok bunga yang tersisa ditampilkan ke terminal.
 
 ## Tugas 
 ### Tugas 1
@@ -81,7 +81,7 @@ Langkah-Langkah Kode Pemograman saya :
 1. Program mendeklarasikan array KODE yang berisi karakter kode plat nomor dan array KOTA yang menyimpan nama kota dalam bentuk array karakter dua dimensi.
 2. Program meminta pengguna untuk memasukkan satu karakter kode plat nomor menggunakan Scanner, lalu membaca karakter pertama dari input yang diberikan. Setelah itu, Scanner ditutup untuk menghemat sumber daya.
 3. Program melakukan pencarian kode plat nomor dalam array KODE menggunakan perulangan for. Jika ditemukan, program menampilkan nama kota yang sesuai dengan cara mengakses elemen array KOTA pada indeks yang sama.
-4. Program mencetak karakter dalam array KOTA satu per satu untuk membentuk nama kota yang lengkap, kemudian menampilkan hasilnya di layar. Jika kode ditemukan, pencarian dihentikan menggunakan break.
+4. Program mencetak karakter dalam array KOTA satu per satu untuk membentuk nama kota yang lengkap, kemudian menampilkan hasilnya di terminal. Jika kode ditemukan, pencarian dihentikan menggunakan break.
 5. Jika kode yang dimasukkan tidak ada dalam array KODE, program menampilkan pesan "Kode plat tidak ditemukan", menandakan bahwa input pengguna tidak cocok dengan daftar kode yang tersedia.
 
 ### Tugas 2
@@ -98,15 +98,15 @@ Langkah-Langkah Kode Pemograman saya :
 - Menghitung Keliling Kubus
 - Keluar dari program
 
-2. Pengguna diminta memasukkan angka sesuai dengan pilihan perhitungan yang diinginkan. Jika pengguna memilih opsi 4 (Keluar), program akan menampilkan pesan "Program selesai." dan keluar dari perulangan dengan break.
+2. Pengguna diminta memasukkan angka sesuai dengan pilihan perhitungan yang diinginkan. Jika pengguna memilih opsi 4 (Keluar), program akan menampilkan pesan "Keluar dari menu!" dan keluar dari perulangan dengan break.
 
-3. Jika pengguna memilih opsi selain 4, program meminta pengguna untuk memasukkan panjang rusuk kubus dalam bentuk angka desimal (double). Program kemudian menggunakan switch-case untuk memanggil fungsi yang sesuai dengan pilihan pengguna:
+3. Jika pengguna memilih opsi selain 1-3, program meminta pengguna untuk memasukkan panjang rusuk kubus. Program kemudian menggunakan switch-case untuk memanggil fungsi yang sesuai dengan pilihan pengguna:
 
-- hitungVolume(double rusuk) → Mengembalikan volume kubus dengan rumus rusuk³
-- hitungLuasPermukaan(double rusuk) → Mengembalikan luas permukaan kubus dengan rumus 6 × rusuk²
-- hitungKeliling(double rusuk) → Mengembalikan keliling kubus dengan rumus 12 × rusuk
+- hitungVolume(int sisi) → Mengembalikan volume kubus dengan rumus sisi³
+- hitungLuasPermukaan(int sisi) → Mengembalikan luas permukaan kubus dengan rumus 6 × sisi²
+- hitungKeliling(int sisi) → Mengembalikan keliling kubus dengan rumus 12 × sisi
 
-4. Program terus menampilkan menu dan meminta input hingga pengguna memilih opsi 4. Jika pengguna memasukkan angka selain 1, 2, atau 3, program akan menampilkan "Pilihan tidak valid". Setelah program selesai, Scanner ditutup untuk mencegah kebocoran sumber daya.
+4. Program terus menampilkan menu dan meminta input hingga pengguna memilih opsi 4. Jika pengguna memasukkan angka selain 1, 2, 3, atau 4 program akan menampilkan "Menu tidak tersedia".
 
 ### Tugas 3
 
@@ -120,23 +120,25 @@ Hasil Kode Program Pada Tugas Nomer 3
 
 Langkah-Langkah Kode Pemograman saya :
 1. Program meminta pengguna untuk memasukkan jumlah mata kuliah yang akan dimasukkan. Untuk setiap mata kuliah, pengguna diminta mengisi nama mata kuliah, jumlah SKS, semester, dan hari kuliah. Data ini disimpan dalam array namaMk, sks, semester, dan hari.
-2. Program menampilkan menu berisi lima pilihan:
+2. Program menampilkan menu berisi 6 pilihan:
 
-- 1 : Menampilkan seluruh jadwal kuliah.
-- 2 : Menampilkan jadwal berdasarkan hari tertentu.
-- 3 : Menampilkan jadwal berdasarkan semester tertentu.
-- 4 : Mencari mata kuliah berdasarkan namanya.
-- 5 : Keluar dari program.
+- 1 : Input Data Mata Kuliah
+- 2 : Menampilkan Seluruh Jadwal
+- 3 : Menampilkan jadwal Berdasarkan Hari
+- 4 : Menampilkan jadwal Berdasarkan Semester
+- 5 : Mencari Mata Kuliah Berdasarkan Nama Matkul
+- 6 : Keluar
 
     Pengguna diminta memasukkan angka sesuai dengan pilihan yang diinginkan.
 
-3. Berdasarkan input pengguna, program memanggil salah satu dari empat fungsi berikut:
+3. Berdasarkan input pengguna, program memanggil salah satu dari 5 fungsi berikut:
 
-- tampilkanJadwal() → Menampilkan seluruh daftar mata kuliah beserta informasi SKS, semester, dan hari kuliah.
-- tampilkanJadwalHari() → Menampilkan daftar mata kuliah yang dijadwalkan pada hari tertentu.
-- tampilkanJadwalSemester() → Menampilkan daftar mata kuliah yang tersedia pada semester tertentu.
-- cariMataKuliah() → Mencari dan menampilkan informasi mata kuliah berdasarkan nama yang dimasukkan pengguna.
+- InputData() → Menginputkan seluruh informasi mata kuliah
+- TampilJadwal() → Menampilkan seluruh daftar mata kuliah beserta informasi SKS, semester, dan hari kuliah.
+- TampilJadwalHari() → Menampilkan daftar mata kuliah yang dijadwalkan pada hari tertentu.
+- TampilJadwalSemester() → Menampilkan daftar mata kuliah yang tersedia pada semester tertentu.
+- CariNamaMataKul() → Mencari dan menampilkan informasi mata kuliah berdasarkan nama yang dimasukkan pengguna.
 
-4. Jika pengguna memilih untuk menampilkan jadwal berdasarkan hari, semester, atau mencari mata kuliah berdasarkan nama, program akan memeriksa apakah data yang dicari tersedia. Jika tidak ditemukan, program menampilkan pesan "Mata kuliah tidak ditemukan".
+4. Jika pengguna memilih untuk menampilkan jadwal berdasarkan hari, semester, atau mencari mata kuliah berdasarkan nama, program akan memeriksa apakah data yang dicari tersedia. Jika tidak ditemukan, program menampilkan pesan "Mata Kuliah Tidak Ada".
 
-5. Program terus menampilkan menu hingga pengguna memilih opsi 5 (Keluar). Jika opsi ini dipilih, program menampilkan pesan "Program selesai." dan keluar dari perulangan menggunakan 'return'
+5. Program terus menampilkan menu hingga pengguna memilih opsi 6 (Keluar). Jika opsi ini dipilih, program menampilkan pesan "Keluar dari Menu." dan keluar dari perulangan menggunakan 'return'.

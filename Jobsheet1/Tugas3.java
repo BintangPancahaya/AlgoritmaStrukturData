@@ -110,7 +110,7 @@ public class Tugas3 {
             }
         } 
         if (!x) {
-            System.out.println("Jadwal tidak ada di hari tersebut.");
+            System.out.println("Mata Kuliah Tidak Ada.");
         }
     }
     static void TampilJadwalSemester(int jumlahMK, String namaMK[], String hari[], int sks[], int semester[]) {
@@ -128,7 +128,7 @@ public class Tugas3 {
             }
         } 
         if (!x) {
-            System.out.println("Jadwal tidak ada di semester tersebut.");
+            System.out.println("Mata Kuliah Tidak Ada.");
         }
     }
     static void CariNamaMatkul(int jumlahMK, String namaMK[], String hari[], int sks[], int semester[]) {
@@ -146,7 +146,7 @@ public class Tugas3 {
             }
         } 
         if (!x) {
-            System.out.println("Mata kuliah tidak ada di jadwal.");
+            System.out.println("Mata Kuliah Tidak Ada.");
         }
     }
 }
