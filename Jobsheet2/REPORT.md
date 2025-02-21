@@ -40,61 +40,81 @@ Karakteristik Class :
 4. Hasil screenshot modifikasi 
 ![Modifikasi](img/Modifikasi4.png)
 5. Pertama method nilaiKinerja() akan menerima parameter double ipk. Kemudian kriteria yang digunakan jika ipk >= 3.5 Kinerja sangat baik, ipk 3.0 - 3.49 Kinerja baik, ipk 2.0 - 2.99 Kinerja cukup, ipk < 2 Kinerja kurang. Method ini mengembalikan nilai berupa string yang menjelaskan tingkat kinerja mahasiswa.
+6. Hasil screenshot push ke github
+![Github](img/Github1.png)
+
+## 2.2.2 Verifikasi Hasil Percobaan
+
+Hasil Verifikasi Percobaan
+![Verif](img/Verifikasi.png)
+
+## 2.2.3 Pertanyaan
+
+1. Pada class MahasiswaMain, tunjukkan baris kode program yang digunakan untuk proses
+instansiasi! Apa nama object yang dihasilkan?
+2. Bagaimana cara mengakses atribut dan method dari suatu objek?
+3. Mengapa hasil output pemanggilan method tampilkanInformasi() pertama dan kedua berbeda?
+
+#### JAWABAN
+
+1. Baris kode program yang menunjukkan instansiasi
+```
+Mahasiswa05 mhs1 = new Mahasiswa05(); 
+Mahasiswa05 mhs2 = new Mahasiswa05("Abidau","244107020115", 3.5, "TI 1H");
+```
+Pada baris pertama, objek mhs1 dibuat menggunakan konstruktor tanpa parameter (default).  
+Pada baris kedua, objek mhs2 dibuat menggunakan konstruktor dengan parameter.
+
+2. Dengan cara menggunakan operator titik (.) setelah nama objek. Contoh:   
+`mhs1.kelas = "TI 1I";
+mhs1.tampilkanInformasi();`
+3. Hasilnya berbeda karena ada perubahan nilai pada atribut objek mhs1 sebelum pemanggilan kedua.
+
+## 2.3.2 Verifikasi Hasil Percobaan
+
+Hasil Verifikasi Percobaan
+
+![Verif2](img/Verifikasi2.png)
+
+## 2.3.3 Pertanyaan
+
+1. Pada class Mahasiswa di Percobaan 3, tunjukkan baris kode program yang digunakan untuk
+mendeklarasikan konstruktor berparameter!
+2. Perhatikan class MahasiswaMain. Apa sebenarnya yang dilakukan pada baris program
+berikut?
+3. Hapus konstruktor default pada class Mahasiswa, kemudian compile dan run program.
+Bagaimana hasilnya? Jelaskan mengapa hasilnya demikian!
+4. Setelah melakukan instansiasi object, apakah method di dalam class Mahasiswa harus diakses
+secara berurutan? Jelaskan alasannya!
+5. Buat object baru dengan nama mhs<NamaMahasiswa> menggunakan konstruktor
+berparameter dari class Mahasiswa!
+6. Commit dan push kode program ke Github
+
+#### JAWABAN
+
+1. Baris kode yang menunjukkan konstruktor berparameter
+```
+public Mahasiswa05(String nm, String nim, double ipk, String kls) {
+    nama = nm;
+    this.nim = nim;
+    this.ipk = ipk;
+    kelas = kls;
+}
+```
+2. Baris ini membuat objek mhs2 dari class Mahasiswa05.
+Konstruktor berparameter dipanggil untuk langsung mengisi atribut nama, nim, ipk, dan kelas.
+Objek mhs2 akan memiliki nilai awal sesuai parameter yang diberikan.
+3. Jika konstruktok default di hapus maka saat program mencoba membuat mhs1 dengan new Mahasiswa05();, terjadi error karena tidak ada konstruktor yang cocok.
+4. Tidak harus. Method dalam Mahasiswa05 bisa dipanggil dalam urutan yang tidak tetap, tergantung kebutuhan.
+5. Menambahkan objek mhs dengan nama mahasiswa
+![Objek](img/Objek.png)
 6. 
-Hasil Kode Program Pada Percobaan Perulangan
-
-
-Langkah-Langkah Kode Pemograman saya :
-1. Program akan meminta user untuk menginputkan NIM
-2. Dua digit diambil dan dikonversi ke int dengan menggunakan `Integer.parseInt`
-3. Jika n kurang dari 10, maka n akan ditambahkan dengan 10 (n += 10)
-4. Program akan mencetak n
-5. Program akan melakukan perulangan dari 1 hingga n, jika (i == 6) atau (i == 10), iterasi dilewati (continue)
-6. Angka genap dicetak sesuai dengan nilai dari i, sedangkan angka ganjil akan mencetak '*'
-
-## 2.4.1 Praktikum Array
-
-Hasil Kode Program Pada Percobaan Array
-
-![Array](img/Array.png)
-
-Langkah-Langkah Kode Pemograman saya :
-1. Program mendeklarasikan beberapa array untuk menyimpan informasi mata kuliah :
-
-- namaMk → Nama mata kuliah
-- sks → Jumlah SKS tiap mata kuliah
-- nilaiMk → Menyimpan nilai angka yang dimasukkan pengguna
-- nilaiHuruf → Menyimpan nilai huruf hasil konversi dari nilai angka
-- bobotSKS → Menyimpan bobot nilai berdasarkan nilai huruf
-
-2. Program akan meminta memasukkan nilai angka untuk setiap mata kuliah dan nilai angka akan disimpan dalam array `nilaiMK`
-3. Setelah menerima nilai angka, program mengonversinya menjadi 
-
-- NIlai Huruf (A, B+, B, C+, C, D, E) berdasarkan rentang nilai
-- Bobot nilai sesuai dengan standar akademik
-
-4. Bobot nilai dikalikan dengan jumlah SKS, lalu ditambahkan ke totalNilai dan jumlah SKS juga dihitung dalam totalSKS
-5. Program akan menampikan hasil konversi dalam format tabel dengan kolom
-
-## 2.5.1 Praktikum Fungsi
-
-Hasil Kode Program Pada Percobaan Fungsi
-
-![Fungsi1](img/NewFungsi1.png)
-![Fungsi2](img/NewFungsi2.png)
-
-Langkah-Langkah Kode Pemograman saya :
-1. Kode program fungsi digunakan untuk menghitung pendapatan dari penjualan bunga di beberapa cabang toko serta menampilkan stok bunga di cabang Royal Garden 4 setelah dilakukan pengurangan.
-2. Program dimulai dengan mendeklarasikan array bunga yang berisi nama bunga, array harga yang menyimpan harga masing-masing bunga dari input user, serta array dua dimensi stok yang merepresentasikan jumlah stok setiap bunga di masing-masing cabang.
-3. Dalam metode main, ada program menu untuk memilih fungsi mana yang mau di panggil, dan terdapat dua fungsi di luar fungsi main, yaitu Pendapatan dan StockBungaCabang4. Fungsi Pendapatan menghitung total pendapatan setiap cabang dengan mengalikan stok bunga di cabang tersebut dengan harga masing-masing bunga, lalu menjumlahkan totalnya. Hasil pendapatan untuk setiap cabang kemudian ditampilkan di terminal.
-4. Fungsi StockBungaCabang4 digunakan untuk menampilkan stok bunga di Royal Garden 4 setelah dikurangi dengan jumlah tertentu sesuai dengan array pengurang, serta jika stok pada bunga itu kurang dari 0 maka program akan membuat stok bunga itu menjadi 0. Setelah pengurangan dilakukan, stok bunga yang tersisa ditampilkan ke terminal.
 
 ## Tugas 
 ### Tugas 1
 
 Hasil Kode Program Pada Tugas Nomer 1
 
-![Tugas1](img/Tugas1Succes.png)
 ![Tugas1](img/Tugas1Fail.png)
 
 Langkah-Langkah Kode Pemograman saya :

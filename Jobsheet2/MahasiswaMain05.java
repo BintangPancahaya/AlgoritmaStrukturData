@@ -22,5 +22,7 @@ public class MahasiswaMain05 {
         String kinerja2 = mhs2.nilaiKinerja(mhs2.ipk);
         System.out.println("Nilai kinerja : " + kinerja2);
 
+        Mahasiswa05 mhsBintang = new Mahasiswa05("Bintang Pancahaya P.", "244107020115", 3.7, "TI 1H");
+        mhsBintang.tampilkanInformasi();
     }
 }

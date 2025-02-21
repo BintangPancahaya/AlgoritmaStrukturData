@@ -7,12 +7,12 @@ public class DosenMain05 {
         dosen1.nama = "Imam Fahrur Rozi, ST., MT.";
         dosen1.bidangKeahlian = "Algoritma dan Struktur Data";
         dosen1.statusAktif = true;
-        dosen1.tahunBergabung = 2015;
-        dosen1.masaKerja = 10;
+        dosen1.tahunBergabung = 2010;
 
         System.out.println("==============");
         System.out.println("Sebelum Diubah");
         System.out.println("--------------");
+        dosen1.hitungMasaKerja(dosen1.tahunBergabung, 2025);
         dosen1.tampilInformasi();
         dosen1.setStatusAktif(true);
         dosen1.hitungMasaKerja(dosen1.tahunBergabung, 2025);
@@ -21,5 +21,12 @@ public class DosenMain05 {
         System.out.println("Sesudah Diubah");
         System.out.println("--------------");
         dosen1.tampilInformasi();
+
+        Dosen05 dosen2 = new Dosen05("1201", "Mungki Astiningrum, ST., M.Kom", "Daspro", true, 2008, 2025);
+        System.out.println("=====================");
+        System.out.println("Konstruktor Parameter");
+        System.out.println("---------------------");
+        dosen2.ubahKeahlian("Praktikum Daspro");
+        dosen2.tampilInformasi();
     }
 }

@@ -18,6 +18,7 @@ public class MataKuliah05 {
         jumlahJam += jam;
     }
     void kurangiJam(int jam) {
+        if (jam < jumlahJam) 
         jumlahJam -= jam;
     }
     public MataKuliah05() {
