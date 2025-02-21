@@ -3,7 +3,7 @@
 | NIM |  244107020115|
 | Nama |  Bintang Pancahaya Prasetyo |
 | Kelas | TI - 1H |
-| Repository | [link] (https://github.com/BintangPancahaya/AlgoritmaStrukturData/tree/main/Jobsheet1) |
+| Repository | [link] (https://github.com/BintangPancahaya/AlgoritmaStrukturData/tree/main/Jobsheet2) |
 
 # JOBSHEET 2
 
@@ -108,21 +108,31 @@ Objek mhs2 akan memiliki nilai awal sesuai parameter yang diberikan.
 4. Tidak harus. Method dalam Mahasiswa05 bisa dipanggil dalam urutan yang tidak tetap, tergantung kebutuhan.
 5. Menambahkan objek mhs dengan nama mahasiswa
 ![Objek](img/Objek.png)
-6. 
+6. Hasil screenshot Github
+![Github](img/Github2.png)
 
-## Tugas 
+
+## 2.4 Latihan Praktikum
 ### Tugas 1
 
 Hasil Kode Program Pada Tugas Nomer 1
 
-![Tugas1](img/Tugas1Fail.png)
+![Tugas1](img/Tugas1.png)
 
 Langkah-Langkah Kode Pemograman saya :
-1. Program mendeklarasikan array KODE yang berisi karakter kode plat nomor dan array KOTA yang menyimpan nama kota dalam bentuk array karakter dua dimensi.
-2. Program meminta pengguna untuk memasukkan satu karakter kode plat nomor menggunakan Scanner, lalu membaca karakter pertama dari input yang diberikan. Setelah itu, Scanner ditutup untuk menghemat sumber daya.
-3. Program melakukan pencarian kode plat nomor dalam array KODE menggunakan perulangan for. Jika ditemukan, program menampilkan nama kota yang sesuai dengan cara mengakses elemen array KOTA pada indeks yang sama.
-4. Program mencetak karakter dalam array KOTA satu per satu untuk membentuk nama kota yang lengkap, kemudian menampilkan hasilnya di terminal. Jika kode ditemukan, pencarian dihentikan menggunakan break.
-5. Jika kode yang dimasukkan tidak ada dalam array KODE, program menampilkan pesan "Kode plat tidak ditemukan", menandakan bahwa input pengguna tidak cocok dengan daftar kode yang tersedia.
+1. Pada class Matakuliah05 mendeklarasi atribut `String kodeMk, String nama, int sks, dan int jumlahJam` untuk menyimpan data mata kuliah.  
+Membuat method:  
+`tampilInformasi()` → Menampilkan detail mata kuliah.  
+`ubahSKS(int sksBaru)` → Mengubah jumlah SKS.  
+`tambahJam(int jam)` → Menambahkan jumlah jam kuliah.  
+`kurangiJam(int jam)` → Mengurangi jumlah jam kuliah (hanya jika jam lebih kecil dari jumlahJam).  
+Konstruktor:  
+Tanpa parameter → Untuk membuat objek tanpa langsung mengisi data.  
+Dengan parameter → Mempermudah pengisian langsung saat objek dibuat.
+
+2. Pada class MataKuliahMain05 membuat objek matkul1 dengan konstruktor default, mengisi data mata kuliah secara manual. Menampikan informasi awal sebelum perubahan, lalu mengubah nilai atribut matkul1, terakhir menampilkan informasi setelah perubahan.
+
+3. Membuat objek matkul2 dengan konstruktor berparameter, langsung mengisi data mata kuliah, kemudian menampilkan informasi.
 
 ### Tugas 2
 
@@ -131,54 +141,16 @@ Hasil Kode Program Pada Tugas Nomer 2
 ![Tugas2](img/Tugas2.png)
 
 Langkah-Langkah Kode Pemograman saya :
-1. Program menampilkan menu pilihan kepada pengguna dengan empat opsi:
+1. Pada class Dosen05 mendeklarasi atribut `String idDosen, String nama, String bidangKeahlian, boolean statusAktif, int tahunBergabung, dan int masaKerja.`  
+Membuat method:  
+`tampilInformasi()` → Menampilkan data dosen.  
+`setStatusAktif(boolean setStatus)` → Mengubah status aktif/tidak aktif.  
+`hitungMasaKerja(int tahunBergabung, int tahunSekarang)` → Menghitung masa kerja berdasarkan tahun.  
+`ubahKeahlian(String bidangAhli)` → Mengubah bidang keahlian dosen.  
+Konstruktor:  
+Tanpa parameter → Untuk membuat objek tanpa langsung mengisi data.  
+Dengan parameter → Mempermudah pengisian langsung saat objek dibuat.
 
-- Menghitung Volume Kubus
-- Menghitung Luas Permukaan Kubus
-- Menghitung Keliling Kubus
-- Keluar dari program
+2. Pada class DosenMain05 membuat objek dosen1 dengan konstruktor default, mengisi data atau mengisi atribut secara manual, lalu menghitung masaKerja berdasarkan tahun bergabung dan tahun sekarang. Menampikan informasi awal sebelum perubahan, lalu mengubah bidang keahlian, terakhir menampilkan informasi setelah perubahan.
 
-2. Pengguna diminta memasukkan angka sesuai dengan pilihan perhitungan yang diinginkan. Jika pengguna memilih opsi 4 (Keluar), program akan menampilkan pesan "Keluar dari menu!" dan keluar dari perulangan dengan break.
-
-3. Jika pengguna memilih opsi selain 1-3, program meminta pengguna untuk memasukkan panjang rusuk kubus. Program kemudian menggunakan switch-case untuk memanggil fungsi yang sesuai dengan pilihan pengguna:
-
-- hitungVolume(int sisi) → Mengembalikan volume kubus dengan rumus sisi³
-- hitungLuasPermukaan(int sisi) → Mengembalikan luas permukaan kubus dengan rumus 6 × sisi²
-- hitungKeliling(int sisi) → Mengembalikan keliling kubus dengan rumus 12 × sisi
-
-4. Program terus menampilkan menu dan meminta input hingga pengguna memilih opsi 4. Jika pengguna memasukkan angka selain 1, 2, 3, atau 4 program akan menampilkan "Menu tidak tersedia".
-
-### Tugas 3
-
-Hasil Kode Program Pada Tugas Nomer 3
-
-![Tugas3-1](img/Tugas3-1.png)
-
-![Tugas3-2](img/Tugas3-2.png)
-
-![Tugas3-3](img/Tugas3-3.png)
-
-Langkah-Langkah Kode Pemograman saya :
-1. Program meminta pengguna untuk memasukkan jumlah mata kuliah yang akan dimasukkan. Untuk setiap mata kuliah, pengguna diminta mengisi nama mata kuliah, jumlah SKS, semester, dan hari kuliah. Data ini disimpan dalam array namaMk, sks, semester, dan hari.
-2. Program menampilkan menu berisi 6 pilihan:
-
-- 1 : Input Data Mata Kuliah
-- 2 : Menampilkan Seluruh Jadwal
-- 3 : Menampilkan jadwal Berdasarkan Hari
-- 4 : Menampilkan jadwal Berdasarkan Semester
-- 5 : Mencari Mata Kuliah Berdasarkan Nama Matkul
-- 6 : Keluar
-
-    Pengguna diminta memasukkan angka sesuai dengan pilihan yang diinginkan.
-
-3. Berdasarkan input pengguna, program memanggil salah satu dari 5 fungsi berikut:
-
-- InputData() → Menginputkan seluruh informasi mata kuliah
-- TampilJadwal() → Menampilkan seluruh daftar mata kuliah beserta informasi SKS, semester, dan hari kuliah.
-- TampilJadwalHari() → Menampilkan daftar mata kuliah yang dijadwalkan pada hari tertentu.
-- TampilJadwalSemester() → Menampilkan daftar mata kuliah yang tersedia pada semester tertentu.
-- CariNamaMataKul() → Mencari dan menampilkan informasi mata kuliah berdasarkan nama yang dimasukkan pengguna.
-
-4. Jika pengguna memilih untuk menampilkan jadwal berdasarkan hari, semester, atau mencari mata kuliah berdasarkan nama, program akan memeriksa apakah data yang dicari tersedia. Jika tidak ditemukan, program menampilkan pesan "Mata Kuliah Tidak Ada".
-
-5. Program terus menampilkan menu hingga pengguna memilih opsi 6 (Keluar). Jika opsi ini dipilih, program menampilkan pesan "Keluar dari Menu." dan keluar dari perulangan menggunakan 'return'.
+3. Membuat objek dosen2 dengan konstruktor berparameter, langsung mengisi atribut, lalu mengubah bidang keahlian dan kemudian menampilkan informasi.
