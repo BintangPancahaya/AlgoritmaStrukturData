@@ -32,7 +32,7 @@ public class DosenDemo05 {
             arrayOfDosen[i] = new Dosen05(kode, nama, jenisKelamin, usia);
         }
         for (int i = 0; i < arrayOfDosen.length; i++) {
-            System.out.println("Data Matakuliah ke-" + (i+1));
+            System.out.println("Data Dosen ke-" + (i+1));
             System.out.println("Kode    : " + arrayOfDosen[i].kode);
             System.out.println("Nama    : " + arrayOfDosen[i].nama);
             System.out.println("Sks     : " + (arrayOfDosen[i].jenisKelamin ? "Pria" : "Wanita"));
