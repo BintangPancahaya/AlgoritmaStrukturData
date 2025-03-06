@@ -83,13 +83,49 @@ Kode class MatakuliahDemo
 
 ![Screenshot](img/jumlahMatkul.png)
 
-## 3.5 Tugas
+## 3.5 Tugas 1
 
 1. Hasil Kode Pemrograman 
 
 ![Screenshot](img/Tugas1.png)
 
-2. Hasil Kode Pemrograman
+Langkah - langkah kode program saya:  
+
+1. Pada Class Dosen05, pertama melakukan deklarasi variabel.  
+`kode (String)` → Kode unik dosen.  
+`nama (String)` → Nama dosen.  
+`jenisKelamin (boolean)` → Jenis kelamin dosen (true = laki-laki, false = perempuan).  
+`usia (int)` → Usia dosen dalam tahun.
+
+2. Kemudian menggunakan konstruktor berparameter.  
+Parameter Constructor:  
+`kode` → Untuk menyimpan kode dosen.  
+`nama` → Untuk menyimpan nama dosen.  
+`jenisKelamin` → Untuk menyimpan jenis kelamin (true = laki-laki, false = perempuan).  
+`usia` → Untuk menyimpan usia dosen.  
+`this` digunakan untuk membedakan antara variabel instance (this.kode) dan parameter (kode).
+
+3. Pada Class DosenDemo05, pertama harus membuat scanner dan menginputkan jumlah dosen.
+
+4. Kemudian mengisi data dosen menggunakan looping.  
+Looping untuk menginput data dosen satu per satu.  
+Input String → `kode, nama, dan jenisKelamin` (L untuk laki-laki, P untuk perempuan).  
+Konversi Jenis Kelamin → Jika `dummy.equals("L")`, maka `jenisKelamin = true (laki-laki)`, jika tidak maka false (perempuan).  
+Konversi Usia → Input usia awalnya `String (dummy)`, kemudian dikonversi menjadi int.  
+Objek Dosen05 dibuat dan disimpan ke dalam array.
+
+5. Menampilkan semua data dosen menggunakan looping.
+
+## Tugas 2
+
+1. Hasil Kode Pemrograman
 
 ![Screenshot](img/Tugas2.png)
+
+2. Di Class DataDosen05 terdapat 5 method.
+- yang pertama untuk menampilkan semua data dosen.
+- yang kedua untuk menghitung jumlah dosen per kelamin.
+- yang ketiga untuk menghitung rata - rata jumlah dosen per kelamin.
+- yang keempat untuk mencari tahu informasi dosen paling tua.
+- yang kelima untuk mencari tahu informasi dosen paling muda.
 
