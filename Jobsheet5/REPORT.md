@@ -130,3 +130,75 @@ Hasil Kode Program
 
    - **Jawaban:**  
      Method `totalDC()` menggunakan pendekatan Divide and Conquer untuk menghitung total nilai array. Array dibagi menjadi dua bagian yang lebih kecil, dan masing-masing bagian dihitung secara rekursif. Hasil dari kedua bagian kemudian digabungkan untuk mendapatkan total keseluruhan. Dan ini adalah pendekatan yang efisien untuk menghitung jumlah array, terutama untuk array yang besar.
+
+## **Langkah - langkah kode program saya**
+
+### 1. Program `MainTugas.java`
+
+**Meminta Input Jumlah Mahasiswa**
+- Program meminta pengguna untuk memasukkan jumlah mahasiswa dan menyimpannya dalam variabel `baris`.
+
+**Membuat Array Objek `Tugas`**
+- Membuat array objek `Tugas` dengan panjang sesuai jumlah mahasiswa yang dimasukkan.
+
+**Mengisi Data Mahasiswa**
+- Melakukan perulangan untuk mengisi data mahasiswa:
+  - Membuat objek `Tugas` baru untuk setiap mahasiswa.
+  - Meminta input nama, NIM, tahun masuk, nilai UTS, dan nilai UAS.
+  - Menyimpan data tersebut ke dalam objek `Tugas`.
+
+**Membuat Array Nilai UTS dan UAS**
+- Membuat dua array `utsArray` dan `uasArray` untuk menyimpan nilai UTS dan UAS dari semua mahasiswa.
+
+**Menampilkan Data Mahasiswa**
+- Menampilkan data mahasiswa dalam bentuk tabel yang mencakup nama, NIM, tahun masuk, nilai UTS, dan nilai UAS.
+
+**Menghitung dan Menampilkan Hasil**
+- Menghitung dan menampilkan:
+  - Nilai UTS tertinggi menggunakan metode Divide and Conquer.
+  - Nilai UTS terendah menggunakan metode Divide and Conquer.
+  - Rata-rata nilai UAS menggunakan metode Brute Force.
+
+### 2. Program `Tugas.java`
+
+**2.2. Atribut Class `Tugas`**
+- Atribut yang dimiliki:
+  - `nama`: String untuk menyimpan nama mahasiswa.
+  - `nim`: String untuk menyimpan NIM mahasiswa.
+  - `tahun`: Integer untuk menyimpan tahun masuk mahasiswa.
+  - `uts`: Integer untuk menyimpan nilai UTS mahasiswa.
+  - `uas`: Integer untuk menyimpan nilai UAS mahasiswa.
+
+**Method `utsTertinggiDC`**
+- Method ini menggunakan algoritma Divide and Conquer untuk mencari nilai UTS tertinggi.
+- Parameter:
+  - `u[]`: Array nilai UTS.
+  - `dummy`: Indeks awal untuk memulai pencarian.
+- Return:
+  - Nilai UTS tertinggi.
+
+**Method `utsTerendahDC`**
+- Method ini menggunakan algoritma Divide and Conquer untuk mencari nilai UTS terendah.
+- Parameter:
+  - `a[]`: Array nilai UTS.
+  - `dummy`: Indeks awal untuk memulai pencarian.
+- Return:
+  - Nilai UTS terendah.
+
+**Method `rataUasBF`**
+- Method ini menggunakan algoritma Brute Force untuk menghitung rata-rata nilai UAS.
+- Parameter:
+  - `u[]`: Array nilai UAS.
+- Return:
+  - Rata-rata nilai UAS.
+
+**Alur Program Secara Keseluruhan**
+1. Program `MainTugas.java` meminta input jumlah mahasiswa dan data masing-masing mahasiswa.
+2. Data mahasiswa disimpan dalam array objek `Tugas`.
+3. Program menampilkan data mahasiswa dalam bentuk tabel.
+4. Program menghitung dan menampilkan nilai UTS tertinggi, nilai UTS terendah, dan rata-rata nilai UAS menggunakan method yang ada di class `Tugas`.
+5. Program selesai dijalankan.
+
+## **HASIL KODE PROGRAM**
+
+![alt text](img/tugas.png)
