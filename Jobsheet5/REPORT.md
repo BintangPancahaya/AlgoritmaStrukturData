@@ -12,7 +12,6 @@
 Hasil Kode Program 
 
 ![Screenshot](img/praktikum1.png)
-
 ### Pertanyaan dan Jawaban
 
 #### 5.2.3. Pertanyaan
