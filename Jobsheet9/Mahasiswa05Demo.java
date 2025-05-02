@@ -22,9 +22,9 @@ public class Mahasiswa05Demo {
                 case 1:
                     System.out.print("Nama: ");
                     String nama = sc.nextLine();
-                    System.out.println("NIM: ");
+                    System.out.print("NIM: ");
                     String nim = sc.nextLine();
-                    System.out.println("Kelas: ");
+                    System.out.print("Kelas: ");
                     String kelas = sc.nextLine();
                     Mahasiswa05 mhs = new Mahasiswa05(nim, nama, kelas);
                     stack.push(mhs);
