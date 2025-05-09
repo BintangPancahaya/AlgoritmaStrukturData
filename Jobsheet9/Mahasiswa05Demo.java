@@ -53,6 +53,18 @@ public class Mahasiswa05Demo {
                     System.out.println("Nama\tNIM\tKelas");
                     stack.print();
                     break;
+                case 5:
+                    Mahasiswa05 bawah = stack.bottom();
+                    if (bawah != null) {
+                    System.out.println("Tugas terbawah:");
+                    System.out.println(bawah.nama + " - " + bawah.nim);
+                    } else {
+                    System.out.println("Stack masih kosong!");
+                    }
+                break;
+                case 6:
+                    System.out.println("Jumlah tugas yang sudah dikumpulkan: " + stack.jumlahTugas());
+                    break;
                 default:
                     System.out.println("Pilihan tidak valid.");
                     break;

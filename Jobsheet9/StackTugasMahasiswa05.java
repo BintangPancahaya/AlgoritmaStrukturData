@@ -45,10 +45,14 @@ public class StackTugasMahasiswa05 {
     }
 
     public void print(){
-        for(int i = 0; i <= top; i++){
+        for(int i = top; i >= 0; i--){
             System.out.println(stack[i].nama + "\t" + stack[i].nim + "\t" + stack[i].kelas);
-        }
-        System.out.println("");
+        } // <== Kode Perbaikan
+
+        // for(int i = 0; i <= top; i++){
+        //     System.out.println(stack[i].nama + "\t" + stack[i].nim + "\t" + stack[i].kelas);
+        // }
+        // System.out.println("");
     }
 
     public String konversiDesimalKeBiner(int nilai){
@@ -64,4 +68,17 @@ public class StackTugasMahasiswa05 {
         }
         return biner;
     }
+
+    public Mahasiswa05 bottom() {
+        if (!isEmpty()) {
+            return stack[0];
+        } else {
+            return null;
+        }
+    }
+
+    public int jumlahTugas() {
+        return top + 1;
+    }
+    
 }

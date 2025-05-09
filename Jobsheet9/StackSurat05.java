@@ -1,41 +1,57 @@
 package Jobsheet9;
 
 public class StackSurat05 {
-    int[] tumpukanBiner;
-    int size;
+    Surat05[] stack;
     int top;
+    int size;
 
-    public StackSurat05(){
-        this.size = 32;
-        tumpukanBiner = new int[size];
+    public StackSurat05(int size) {
+        this.size = size;
+        stack = new Surat05[size];
         top = -1;
     }
 
-    public boolean isEmpty(){
+    public boolean isFull() {
+        return top == size - 1;
+    }
+
+    public boolean isEmpty() {
         return top == -1;
     }
 
-    public boolean isFull(){
-       return top == size - 1;
-    }
-
-    public void push(int data){
-        if(isFull()){
-            System.out.println("Stack penuh");
+    public void push(Surat05 s) {
+        if (!isFull()) {
+            stack[++top] = s;
+            System.out.println("Surat berhasil ditambahkan.");
         } else {
-            top++;
-            tumpukanBiner[top] = data;
+            System.out.println("Stack penuh! Tidak bisa menambahkan surat.");
         }
     }
 
-    public int pop(){
-        if(isEmpty()){
-            System.out.println("Stack Kosong");
-            return -1;
+    public Surat05 pop() {
+        if (!isEmpty()) {
+            return stack[top--];
         } else {
-            int data = tumpukanBiner[top];
-            top--;
-            return data;
+            System.out.println("Stack kosong! Tidak ada surat untuk diproses.");
+            return null;
         }
+    }
+
+    public Surat05 peek() {
+        if (!isEmpty()) {
+            return stack[top];
+        } else {
+            System.out.println("Stack kosong!");
+            return null;
+        }
+    }
+
+    public boolean cariSurat(String nama) {
+        for (int i = 0; i <= top; i++) {
+            if (stack[i].namaMahasiswa.equalsIgnoreCase(nama)) {
+                return true;
+            }
+        }
+        return false;
     }
 }
