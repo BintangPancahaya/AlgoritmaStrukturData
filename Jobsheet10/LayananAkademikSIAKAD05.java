@@ -34,10 +34,10 @@ public class LayananAkademikSIAKAD05 {
                     antrian.tambahAntrian(mhs);
                     break;
                 case 2:
-                    Mahasiswa05 dilayani[] = antrian.layaniMahasiswa05();
+                    Mahasiswa05 dilayani = antrian.layaniMahasiswa05();
                     if(dilayani != null){
                         System.out.print("Melayani mahasiswa: ");
-                        dilayani[0].tampilkanData();
+                        dilayani.tampilkanData();
                     }
                     break;
                 case 3:

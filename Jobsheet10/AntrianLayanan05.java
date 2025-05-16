@@ -74,34 +74,43 @@ public class AntrianLayanan05 {
         System.out.println(mhs.nama + " berhasil masuk ke antrian");
     }
 
-    public Mahasiswa05[] layaniMahasiswa05(){
+    public Mahasiswa05 layaniMahasiswa05(){
         if (isEmpty()){
             System.out.println("Antrian kosong.");
             return null;
         }
-        if(size==1){
-            Mahasiswa05[] ret = new Mahasiswa05[1];
-            Mahasiswa05 mhs = data[front];
-            ret[0] = mhs;
-            front = (front + 1) % max;
-            size--;
-            sudahDilayani++;
-            return ret;
-        }else{
-            Mahasiswa05[] ret = new Mahasiswa05[2];
-            Mahasiswa05 mhs = data[front];
-            ret[0] = mhs;
-            front = (front + 1) % max;
-            size--;
-            sudahDilayani++;
-            ret[1] = data[front]; 
-            front = (front + 1) % max;
-            size--;
-            sudahDilayani++;
-            return ret;
-        }
-        
+        Mahasiswa05 mhs = data[front];
+        front = (front + 1) % max;
+        size--;
+        return mhs;
     }
+    // public Mahasiswa05[] layaniMahasiswa05(){
+    //     if (isEmpty()){
+    //         System.out.println("Antrian kosong.");
+    //         return null;
+    //     }
+    //     if(size==1){
+    //         Mahasiswa05[] ret = new Mahasiswa05[1];
+    //         Mahasiswa05 mhs = data[front];
+    //         ret[0] = mhs;
+    //         front = (front + 1) % max;
+    //         size--;
+    //         sudahDilayani++;
+    //         return ret;
+    //     }else{
+    //         Mahasiswa05[] ret = new Mahasiswa05[2];
+    //         Mahasiswa05 mhs = data[front];
+    //         ret[0] = mhs;
+    //         front = (front + 1) % max;
+    //         size--;
+    //         sudahDilayani++;
+    //         ret[1] = data[front]; 
+    //         front = (front + 1) % max;
+    //         size--;
+    //         sudahDilayani++;
+    //         return ret;
+    //     }
+    // }
 
     public void lihatTerdepan(){
         if (isEmpty()){
